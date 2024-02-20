@@ -92,20 +92,25 @@
 
 
 # # ----Slide 39 ---- #
-# fruit_genus = {
-#     "watermelon": "citrullus",
-#     "orange": "citrus",
-#     "plum": "prunus",
-#     "lemon": "citrus",
-# }
+fruit_genus = {
+    "watermelon": "citrullus",
+    "orange": "citrus",
+    "plum": "prunus",
+    "lemon": "citrus",
+}
 
 # print(fruit_genus["orange"])
 # print(fruit_genus["apple"])  # KeyError: 'apple'
 # print('-' * 10)
+def add_key(key,dictionary):
+    dictionary[key] = "unknown"
+    return f"{key} is added"
 
-# print(fruit_genus.get("orange"))  # citrus
-# print(fruit_genus.get("apple"))  # None
-# print(fruit_genus.get("apple", "apple is not a key"))  # apple is not a key
+print(fruit_genus.get("orange"))  # citrus
+print(fruit_genus.get("apple"))  # None
+print(fruit_genus.get("apple", add_key("apple",fruit_genus)))  # apple is not a key
+print(fruit_genus.get("apple"))  # None
+
 
 # # ----Slide 40 ---- #
 # fruit_genus = {
@@ -220,8 +225,21 @@ fruit_genus = {
     "plantain": "musa",
 }
 
+fruit_genus["apple"] = "malus"
+
+# print(fruit_genus)  # {'plum': 'prunus', 'orange': 'citrus', 'apple': 'malus', 'plantain': 'musa'}
 # In one line, update the value 'apple' to 'malus'
 
 # In one line, change the key 'orange' to 'lemon'
 
+fruit_genus["lemon"] = fruit_genus.pop("orange")
+
+
+print(fruit_genus)  # {'plum': 'prunus', 'lemon': 'citrus', 'apple': 'malus', 'plantain': 'musa'}
+
+
+
+
 # Create a new dictionary (name it d) with items from fruit_genus. The keys in d must contain the substring 'pl'.
+d = {key: value for key, value in fruit_genus.items() if 'pl' in key}
+print(d)

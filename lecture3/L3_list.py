@@ -1,7 +1,7 @@
 # ==================#
 # --- List Type --- #
 # ==================#
-
+ 
 # # ----Slide 5 ---- #
 # question = "What is blue and smells like red paint?"
 
@@ -26,12 +26,16 @@
 # c = ["a", [1, 2, 3.5], ["b", ["c", "d", 1, 2, 3]]]
 
 # # ----Slide 8 ---- #
-# fruits1 = ["apple", "banana", "cherry"]
-# fruits2 = ["cherry", "banana", "apple"]
-# fruits3 = ["apple", "banana", "cherry"]
+fruits1 = ["apple", "banana", "cherry"]
+fruits2 = ["cherry", "banana", "apple"]
+fruits3 = ["apple", "banana", "cherry"]
+# print(fruits3.index("cherry"))  # 2
+# print(fruits3)  # ['apple', 'banana', 'kiwi']
 # print(fruits1 == fruits2)  # False
 # print(fruits1 is fruits2)  # False
 # print(fruits1 == fruits3)  # True
+
+
 # print(fruits1 is fruits3)  # False
 
 # # ----Slide 9 ---- #
@@ -146,7 +150,7 @@
 
 # # ----Slide 19 ---- #
 # letters = ["a", ["bb", ["ccc", "ddd"], "ee", "ff"], "g"]
-
+# print(letters[1][1][0])  # ccc
 
 # # ----Slide 20 ---- #
 # fruits1 = ["apple"]
@@ -209,10 +213,10 @@
 # print(num)  # [3, 1, 2, 3, 2]
 # print("-" * 10)
 
-# num = ["a", "d", "ccc", "bb"]
-# num.sort()
-# print(num)  # ['a', 'bb', 'ccc', 'd']
-# print("-" * 10)
+num = ["a", "ccc", "bb"]
+num.sort()
+print(num)  # ['a', 'bb', 'ccc', 'd']
+print("-" * 10)
 
 # num = ["a", "d", "ccc", "bb"]
 # new_num = sorted(num)
@@ -221,25 +225,27 @@
 
 
 # # ----Slide 24 - Quiz ---- #
-# a = [0, 1, [2, 3]]
-# print(a.pop().pop())
+a = [0, 1, [2, 3]]
+print(a.pop().pop())
 # print("-" * 10)
 
-# a = ["1", "2", "3"]
-# print(a[1:])
+a = ["1", "2", "3"]
+print(a[1:])
 # print("-" * 10)
 
-# x = ["a", "b"]
-# y = "cde"
-# print(x.extend(y))
+x = ["a", "b"]
+y = "cde"
+print(x.extend(y))
 # print("-" * 10)
 
-# fruits = ["apple", "banana", "cherry", "kiwi", "mango"]
-# output = [x for x in fruits if "a" in x]
-# print(output)
-# print("-" * 10)
+fruits = ["apple", "banana", "cherry", "kiwi", "mango"]
+output = [x for x in fruits if "a" in x]
+print(output)
+print("-" * 10)
 
 # Use slicing to remove "apple", "banana", "cherry" from the list
-# fruits = ["apple", "banana", "cherry", "kiwi", "mango"]
+fruits = ["apple", "banana", "cherry", "kiwi", "mango"]
+del fruits[:3]
+print(fruits)
 
 

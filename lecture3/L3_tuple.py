@@ -9,7 +9,8 @@
 
 # # ----Slide 27 ---- #
 # fruits = ("apple", "kiwi", "orange")
-# print(fruits)  # ('apple', 'kiwi', 'orange')
+fruits = "apple",
+print(fruits)  # ('apple', 'kiwi', 'orange')
 # print('-' * 10)
 
 # fruits = 'apple', 'kiwi', 'orange'
@@ -56,3 +57,6 @@
 # fruits[1][0] = "cherry"
 # print(fruits)  # ('apple', ['cherry', 'orange']
 # fruits[1] = []  # TypeError: 'tuple' object does not support item assignment
+
+
+print(type((1,)))
