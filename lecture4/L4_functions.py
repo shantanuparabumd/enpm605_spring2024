@@ -6,21 +6,21 @@
 # # --     SLIDE 9     -- #
 # # %%%%%%%%%%%%%%%%%%%%% #
 
-# def greet(name):
-#     """
-#     Function to greet a person by name.
+def greet(name):
+    """
+    Function to greet a person by name.
 
-#     Args:
-#         name (str): Name of the person to greet.
+    Args:
+        name (str): Name of the person to greet.
 
-#     Returns:
-#         str: Greeting message.
-#     """
+    Returns:
+        str: Greeting message.
+    """
 
-#     return f"Hello, {name}!"
+    return f"Hello, {name}!"
 
 
-# print(greet.__doc__)
+print(greet.__doc__)
 
 # # %%%%%%%%%%%%%%%%%%%%% #
 # # --     SLIDE 11    -- #
@@ -608,3 +608,9 @@
 
 # # Run the Tkinter event loop
 # window.mainloop()
+
+
+
+
+float = 7
+print(type(3.5))
