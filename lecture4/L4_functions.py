@@ -608,9 +608,3 @@ print(greet.__doc__)
 
 # # Run the Tkinter event loop
 # window.mainloop()
-
-
-
-
-float = 7
-print(type(3.5))
